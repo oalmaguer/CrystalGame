@@ -1,14 +1,19 @@
 $(document).ready(function() {
-    $("#btn").on("click", function(){
-        let randomNumber = Math.floor(Math.random() * 30) + 15;
-  console.log("Random Number " + randomNumber);
-  $(".randomNumber").append(randomNumber);
-  totalScore = 0;
-    })
+
+  
+
   let randomNumber = Math.floor(Math.random() * 30) + 15;
   console.log("Random Number " + randomNumber);
   $(".randomNumber").append(randomNumber);
   totalScore = 0;
+
+  $("#btn").on("click", function() {
+    let newRandomNumber = Math.floor(Math.random() * 50) + 80;
+    console.log("Random Number " + newRandomNumber);
+    $(".randomNumber").text(newRandomNumber);
+    totalScore = 0;
+    randomNumber = newRandomNumber;
+  })
 
   let number1 = Math.floor(Math.random() * 10) + 1;
   console.log("First rnumber " + number1);
@@ -21,6 +26,8 @@ $(document).ready(function() {
   console.log("Third rnumber " + number3);
   let number4 = Math.floor(Math.random() * 10) + 1;
   console.log("Fourth rnumber " + number4);
+
+     
 
   $(".crystal1").on("click", function() {
     totalScore = totalScore + number1;
@@ -85,12 +92,7 @@ $(document).ready(function() {
       $(".wins").css({ color: "white" });
       $(".losses").css({ color: "white" });
       totalScore = 0;
-      var color = setInterval(setColor, 300);
-      function setColor() {
-          var x = document.body;
-          x.style.backgroundColor = x.style.backgroundColor == "green";
-      }
-
+      
       
       
     } else if (totalScore > randomNumber) {
@@ -118,10 +120,7 @@ $(document).ready(function() {
       $(".wins").css({ color: "white" });
       $(".losses").css({ color: "white" });
       totalScore = 0;
-      function setColor() {
-        var x = document.body;
-        x.style.backgroundColor = x.style.backgroundColor == "red";
-    }
+      
     }
   }
 });
