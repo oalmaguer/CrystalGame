@@ -1,5 +1,6 @@
 body {
     margin-left: 20px;
+    overflow: hidden;
 }
 
 .crystalCollector {
@@ -61,7 +62,33 @@ img {
 
 #btn {  
     position: relative;
-    bottom: 400px;
+    bottom: 600px;
+    margin-left: 700px;
+    width: 100px;
+    height: 80px;
+}
+
+.coins {  
+    position: relative;
+    bottom: 550px;
+    margin-left: 700px;
+    width: 100px;
+    height: 80px;
+}
+
+.coins2 {  
+    font-size: 20px;
+    position: relative;
+    bottom: 480px;
+    margin-left: 700px;
+    width: 100px;
+    height: 80px;
+}
+
+.randomResults {  
+    position: relative;
+    font-size: 20px;
+    bottom: 500px;
     margin-left: 700px;
     width: 100px;
     height: 80px;
