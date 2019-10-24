@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  //just to reupload
+
   $(".coins").on("click", function(){
     if (coins >= 2) {
         console.log("You have " + coins +" coins");
