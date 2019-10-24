@@ -3,7 +3,7 @@ $(document).ready(function() {
   $(".coins").on("click", function(){
     if (coins >= 2) {
         console.log("You have " + coins +" coins");
-        $(".randomResults").text("First "+number1+" Second "+number2+" Third "+number3+" Fourth "+number4);
+        $(".randomResults").text("First crystal "+number1+" Second crystal "+number2+" Third crystal "+number3+" Fourth crystal "+number4);
         coins = 0;
         $(".coins2").text("You have " +coins+" coins");
     } else {
@@ -26,6 +26,9 @@ $(document).ready(function() {
   })
 
   let number1 = Math.floor(Math.random() * 10) + 1;
+  if (number1 % 2 == 0) {
+    number1 = number1 + 1;
+  }
   console.log("First rnumber " + number1);
   let number2 = Math.floor(Math.random() * 10) + 1;
   if (number2 % 2 != 0) {

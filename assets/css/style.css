@@ -79,7 +79,7 @@ img {
 .coins2 {  
     font-size: 20px;
     position: relative;
-    bottom: 480px;
+    bottom: 430px;
     margin-left: 700px;
     width: 100px;
     height: 80px;
@@ -88,8 +88,14 @@ img {
 .randomResults {  
     position: relative;
     font-size: 20px;
-    bottom: 500px;
+    bottom: 400px;
     margin-left: 700px;
-    width: 100px;
+    width: 150px;
     height: 80px;
+}
+
+.coingif {
+    margin-left: -60px;
+    width: 250px;
+    height: 250px;
 }
